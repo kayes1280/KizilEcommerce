@@ -53,7 +53,7 @@ export default function Navbar() {
                     <input
                         type="text"
                         placeholder="Search for Products"
-                        className="w-full lg:w-[600px] bg-[#F3F3F3] text-[#757575] placeholder-[#757575] text-lg rounded-full py-3 pl-14 pr-6 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all"
+                        className="w-full lg:w-[400px] bg-[#F3F3F3] text-[#757575] placeholder-[#757575] text-lg rounded-full py-3 pl-14 pr-6 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all"
                     />
                 </div>
 
