@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
     useEffect(() => {
         const timer = setInterval(() => {
         setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-        }, 8000);
+        }, 4000);
 
         return () => clearInterval(timer);
     }, []);

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const topPicksData = [
     { id: 1, name: 'Tops Collection', imageUrl: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=400', link: '/category/tops' },
     { id: 2, name: 'Bottom Wear', imageUrl: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=400', link: '/category/bottoms' },
-    { id: 3, name: 'Loungewear', imageUrl: 'https://images.unsplash.com/photo-1562572159-4ebcd318f4dd?q=80&w=400', link: '/category/loungewear' },
+    { id: 3, name: 'Loungewear', imageUrl: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=400', link: '/category/loungewear' },
     { id: 4, name: 'Scarves & Wraps', imageUrl: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?q=80&w=400', link: '/category/scarves' },
 ];
 

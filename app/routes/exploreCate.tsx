@@ -26,7 +26,7 @@ const categories: Category[] = [
     {
         id: 3,
         name: 'Loungewear',
-        imageUrl: 'https://images.unsplash.com/photo-1562572159-4ebcd318f4dd?q=80&w=500&auto=format&fit=crop', // Replace with actual loungewear image
+        imageUrl: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=500&auto=format&fit=crop', // Replace with actual loungewear image
         link: '/category/loungewear',
     },
     {
