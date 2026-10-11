@@ -67,15 +67,15 @@ export default function Navbar(){
         <>
 
             {/* 2nd nav */}
-            <div className="w-[90%] mx-auto flex items-center justify-between mt-5 relative mb-5">
+            <div className="w-[90%] mx-auto flex flex-wrap items-center justify-between gap-3 mt-4 lg:mt-5 relative mb-4 lg:mb-5">
           
                 {/* LEFT CONTAINER */}
-                <div className="flex items-center gap-8">
+                <div className="w-full lg:w-auto flex flex-wrap items-center gap-x-4 gap-y-3 lg:gap-8">
                     
                     {/* Dropdown Container */}
                     <div className="relative" ref={dropdownRef}>
                         <button onClick={handleMainToggle}
-                            className={`flex items-center gap-3 px-5 py-3 rounded-md font-semibold tracking-wide text-xs uppercase transition-all duration-200 ${
+                            className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-3 rounded-md font-semibold tracking-wide text-[10px] sm:text-xs uppercase transition-all duration-200 ${
                             isCategoryOpen 
                                 ? 'bg-[#1A1A1A] text-white ring-2 ring-gray-400 opacity-100'
                                 : 'bg-[#2D2D2D] text-white hover:bg-black'
@@ -87,10 +87,10 @@ export default function Navbar(){
 
                         {/* category with animation */}
                         {isCategoryOpen && (
-                            <div className="absolute left-0 top-[calc(100%+6px)] flex z-50 shadow-xl rounded-xl border border-gray-100 bg-white animate-slow-dropdown">
+                            <div className="absolute left-0 top-[calc(100%+6px)] flex z-50 max-w-[90vw] shadow-xl rounded-xl border border-gray-100 bg-white animate-slow-dropdown">
                             
                                 {/* category list */}
-                                <ul className="w-64 py-2 bg-white flex flex-col justify-start relative min-h-[280px]">
+                                <ul className="w-56 sm:w-64 max-h-[70vh] overflow-y-auto py-2 bg-white flex flex-col justify-start relative min-h-[280px]">
                                     {categories.map((cat) => {
                                         const isActive = activeCategory === cat.name;
                                         return (
@@ -115,7 +115,7 @@ export default function Navbar(){
                                 {/*subcategory with perfectly aligned main category */}
                                 {activeCategory && (
                                     <div 
-                                        className="absolute left-full bg-white shadow-xl border border-gray-100 rounded-xl py-2 min-h-[150px] w-64 z-50 animate-slow-dropdown"
+                                        className="absolute left-0 top-full sm:left-full sm:top-0 bg-white shadow-xl border border-gray-100 rounded-xl py-2 max-h-[60vh] overflow-y-auto min-h-[150px] w-56 sm:w-64 z-50 animate-slow-dropdown"
                                         style={{ top: `${subMenuTop}px` }} 
                                         onClick={(e) => e.stopPropagation()} 
                                     >
@@ -139,7 +139,7 @@ export default function Navbar(){
                     </div>
 
                     {/*next navigation  */}
-                    <div className="hidden md:flex items-center gap-6 font-medium text-[#222222]">
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 md:gap-6 font-medium text-[#222222] text-xs sm:text-sm md:text-base">
                         <a href="#" className="hover:text-[#FF4500] transition-colors">Our Collections</a>
                         
                         <a href="#" className="flex items-center gap-1 hover:text-[#FF4500] transition-colors">
@@ -157,7 +157,7 @@ export default function Navbar(){
                 </div>
 
                 {/* right side link */}
-                <div className="flex items-center gap-6 font-medium text-[#222222] mr-29">
+                <div className="w-full lg:w-auto flex flex-wrap items-center justify-between lg:justify-end gap-x-4 gap-y-2 font-medium text-[#222222] text-xs sm:text-sm">
                     <a href="#" className="flex items-center gap-1.5 hover:text-[#FF4500] transition-colors">
                         <LuBriefcase className="w-4 h-4 text-[#FF4500]" />
                         Corporate Enquiries

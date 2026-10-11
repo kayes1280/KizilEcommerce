@@ -19,7 +19,7 @@ export const BundleCard: React.FC<BundleCardProps> = ({
     return (
         <div className="group bg-white rounded-xl p-3 transition-all duration-300 shadow-lg border border-gray-50">
             {/* Bundle Image with Hover Effect */}
-            <div className="relative rounded-lg bg-gray-300 overflow-hidden">
+            <div className="relative aspect-[4/5] rounded-lg bg-gray-300 overflow-hidden">
                 <img
                     src={imageUrl}
                     alt={title}

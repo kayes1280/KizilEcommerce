@@ -30,11 +30,11 @@ const socialMedia = [
 export default function Footer(){
     return (
         <section className="bg-[#F6F6F6] ">
-            <div className="w-[90%] mx-auto py-10 flex items-start justify-between">
-                <div>
+            <div className="w-[90%] mx-auto py-8 md:py-10 flex flex-col md:flex-row items-start justify-between gap-8">
+                <div className="max-w-full md:max-w-sm">
                     <h1 className="text-3xl tracking-[6px]"><span>KI</span><span className="text-orange-500">ZIL</span></h1>
                     <div className="mt-5">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-start gap-2">
                             <LuSend />
                             <h3>29 SEA 2nd Ave, Miami Florida 33131, United States</h3>
                         </div>
@@ -46,7 +46,7 @@ export default function Footer(){
                     <h2 className="mt-2 font-bold">(+92) 3942 7879</h2>
                 </div>
 
-                <div className="flex items-start gap-30">
+                <div className="w-full md:w-auto grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-10 lg:gap-16">
                     {footer.map((item,index)=> (
                         <div key={index}>
                             <h2 className="mb-5">{item.title}</h2>
@@ -62,7 +62,7 @@ export default function Footer(){
             </div>
             <hr className="border-t border-gray-500 w-[90%] mx-auto" />
 
-            <div className="w-[90%] mx-auto py-5  flex items-center items-start justify-between ">
+            <div className="w-[90%] mx-auto py-5 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm">
                 
                 <div>
                     <div><h1>Copyright@ <span className="text-orange-500">350D Soul Limited 2026.</span> All rights reserved.</h1></div>
@@ -72,7 +72,7 @@ export default function Footer(){
                         <a key={idx} href="#" className="hover:text-orange-500">{item.icon}</a>
                     ))}
                 </div>
-                <div className="flex items-center gap-5">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                     <a href="#" className="block hover:text-yellow-300"><h1>Teams & Conditions</h1></a>
                     <a href="#" className="block hover:text-yellow-300"><h1>Privacy & Policy</h1></a>
                     <a href="#" className="block hover:text-yellow-300"><h1>Refund Policy</h1></a>

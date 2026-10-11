@@ -25,9 +25,9 @@ export default function Navbar() {
     return (
         <>
             {/* 1st nav */}
-            <div className="w-[95%] lg:w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 mt-5">
+            <div className="w-[95%] lg:w-[90%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 mt-4 lg:mt-5 pb-4">
                 
-                <div className="flex flex-col sm:flex-row items-center gap-6 lg:gap-10">
+                <div className="w-full lg:w-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 lg:gap-10">
                     <h1 className="tracking-[5px] text-4xl sm:text-5xl lg:text-6xl font-bold">
                         KI<span className="text-orange-500">ZIL</span>
                     </h1>
@@ -45,7 +45,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <div className="relative w-full lg:w-auto">
+                <div className="relative w-full lg:w-[32%]">
                     <div className="absolute my-4 ml-4">
                         <FaMagnifyingGlass className="h-5 w-5 text-[#FF4500] stroke-[2.5]" />
                     </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
                     />
                 </div>
 
-                <div className="flex flex-wrap justify-center lg:justify-end items-center gap-5 lg:gap-15">
+                <div className="w-full flex flex-wrap justify-center lg:justify-end items-center gap-x-5 gap-y-3 lg:gap-8">
                     {navLinks.map((link, idx) => (
                         <div key={idx} className="flex items-center gap-3">
                             {link.icon}

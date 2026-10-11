@@ -71,13 +71,13 @@ export const CategorySection: React.FC = () => {
                     </p>
                 </div>
                 
-                 <div className={` transition-all duration-400 ease-out ${isScrolled ? 'w-full max-w-full' : 'ml-15'}`}>
+                 <div className={`transition-all duration-400 ease-out ${isScrolled ? 'w-full max-w-full' : 'ml-0 sm:ml-4 md:ml-8 lg:ml-15'}`}>
                     <div ref={scrollRef} onScroll={handleScroll} style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none' }}
                         className="flex flex-nowrap gap-5 overflow-x-auto pb-6 scrollbar-hide select-none cursor-grab active:cursor-grabbing snap-x snap-mandatory"
                     >
                         {categories.map((category) => (
                             <Link key={category.id} to={category.link} className="flex-none group block">
-                                <div className="h-[300px] sm:h-[380px] md:h-[500px] rounded-[24px] w-[260px] sm:w-[280px] md:w-[400px] overflow-hidden bg-gray-100">
+                                <div className="h-[280px] sm:h-[380px] md:h-[500px] rounded-[20px] md:rounded-[24px] w-[78vw] max-w-[300px] sm:w-[280px] md:w-[400px] overflow-hidden bg-gray-100">
                                     <img src={category.imageUrl} alt={category.name} className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-108 pointer-events-none" loading="lazy"/>
                                 </div>
 

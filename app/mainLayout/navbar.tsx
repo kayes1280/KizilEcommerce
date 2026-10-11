@@ -1,5 +1,5 @@
-import FirstNav from "./firstNav.tsx";
-import SecondNav from "./secondNav.tsx";
+import FirstNav from "./firstNav";
+import SecondNav from "./secondNav";
 
 export default function Navbar() {
     return (

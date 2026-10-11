@@ -58,8 +58,8 @@ export const Hero: React.FC = () => {
     }, []);
 
   return (
-    <section className="w-[90%] mx-auto bg-white font-sans mt-5">
-        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[500px] overflow-hidden rounded-2xl">
+    <section className="w-[94%] md:w-[90%] mx-auto bg-white font-sans mt-4 md:mt-5">
+        <div className="relative w-full h-[360px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-xl md:rounded-2xl">
 
             <div
                 className="flex h-full transition-transform duration-2000 ease-in-out"
@@ -70,19 +70,19 @@ export const Hero: React.FC = () => {
                 {slides.map((slide, index) => (
                     <div key={slide.id} className={`min-w-full h-full relative ${slide.bgColor}`}>
                         {/* Content */}
-                        <div className="px-5 md:px-10 h-full flex items-center relative">
+                        <div className="px-5 sm:px-8 md:px-10 h-full flex items-center relative">
 
-                            <div className="text-white z-20">
-                                <h1 className="text-[2rem] md:text-[3.5rem]">{slide.title}</h1>
-                                <p className="text-[15px] md:text-[20px]">{slide.subtitle}</p>
+                            <div className="text-white z-20 w-[68%] sm:w-[60%] md:w-1/2">
+                                <h1 className="text-2xl sm:text-4xl md:text-[3.5rem] leading-tight">{slide.title}</h1>
+                                <p className="mt-2 text-xs sm:text-[15px] md:text-[20px] leading-relaxed">{slide.subtitle}</p>
                                 {slide.showBtn && (
-                                    <Link to={slide.buttonLink} className="inline-block mt-4 px-6 py-3 bg-black text-white font-semibold rounded-[8px] hover:bg-gray-700 transition">
+                                <Link to={slide.buttonLink} className="inline-block mt-4 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base bg-black text-white font-semibold rounded-[8px] hover:bg-gray-700 transition">
                                         {slide.buttonText}
                                     </Link>
                                 )}
                             </div>
 
-                            <div className="absolute right-0 bottom-0 w-1/2 h-full">
+                            <div className="absolute right-0 bottom-0 w-[52%] sm:w-1/2 h-full">
                                 <img
                                 src={slide.imageUrl}
                                 alt={slide.title}
@@ -113,11 +113,11 @@ export const Hero: React.FC = () => {
 
 
         {/* bottom feature */}
-        <div className="max-w-9xl md:py-10 mx-auto border-b border-gray-100 bg-white">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4">
+        <div className="md:py-8 lg:py-10 mx-auto border-b border-gray-100 bg-white">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 py-4 md:py-0">
                     
                 {/*Shipping */}
-                <div className="flex items-center space-x-4 md:justify-center ">
+                <div className="flex items-center space-x-3 md:justify-center px-2 sm:px-0">
                     <div className="p-3 bg-orange-50 rounded-full text-[#ff4a5a]">
                         <Truck className="w-6 h-6 stroke-[1.5]" />
                     </div>
@@ -128,7 +128,7 @@ export const Hero: React.FC = () => {
                 </div>
 
                 {/*Next Day Delivery */}
-                <div className="flex items-center space-x-4 md:justify-center">
+                <div className="flex items-center space-x-3 md:justify-center px-2 sm:px-0">
                     <div className="p-3 bg-orange-50 rounded-full text-[#ff4a5a]">
                         <Clock className="w-6 h-6 stroke-[1.5]" />
                     </div>
@@ -139,7 +139,7 @@ export const Hero: React.FC = () => {
                 </div>
 
                 {/*Quality Guarantee */}
-                <div className="flex items-center space-x-4 md:justify-center">
+                <div className="flex items-center space-x-3 md:justify-center px-2 sm:px-0">
                     <div className="p-3 bg-orange-50 rounded-full text-[#ff4a5a]">
                         <ShieldCheck className="w-6 h-6 stroke-[1.5]" />
                     </div>

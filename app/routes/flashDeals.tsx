@@ -14,9 +14,9 @@ export const FlashDeals: React.FC = () => {
         <section>
             <div className="w-[90%] mx-auto px-4 md:px-8">
                 {/* Header Content */}
-                <div className="flex sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-5 mb-6">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-200 pb-5 mb-6">
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">Flash Deals</h2>
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-wrap items-center justify-between sm:justify-end gap-3 sm:gap-6">
                         <CountdownTimer />
                         <button className="text-xs font-semibold text-gray-900 underline hover:text-gray-600 ">
                             See All Products
